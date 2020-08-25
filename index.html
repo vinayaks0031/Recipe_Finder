@@ -1,16 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Book</title>
-    <link rel="stylesheet" href="main.css">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <input>
-    <script src="index.js"></script>
-</body>
+  <div id="container">
+    <div class="basic background" data-aos="slide-right">
+      <h1>Search Recipes</h1>
+      <label>Ingredients</label><br>
+      <input type="text" id="ingre"><br><br>
+      <label>Dish</label><br>
+      <input type="text" id="dish" placeholder="Required..."><br><br>
+      <button class="btn" type="submit" onclick="search()">Search Recipes...</button>
+      <button class="btn" onclick="reset()">Reset Details..</button>
+    </div>
 
+    <div id="res">
+      <div id="desc">
+        <h1>Results for </h1>
+      </div>
+      <div id="card"></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
