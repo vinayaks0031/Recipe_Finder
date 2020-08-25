@@ -59,7 +59,7 @@ input:focus {
     flex-wrap: wrap;
     align-items: center;
     width: 60%;
-    margin: 30px 20px;
+    margin: 0px 20px;
     visibility: hidden;
 }
 #res h1{
