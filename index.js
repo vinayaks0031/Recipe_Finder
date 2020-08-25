@@ -39,6 +39,7 @@ function render_cards(data) {
 }
 //==========================================  Fetching API ====================================================//
 async function search() {
+    AOS.init();
     var buttons = document.getElementsByClassName("ingre_btn");
     empty(ingre);
     i = document.getElementById('ingre').value.trim();
@@ -77,6 +78,7 @@ function not_found() {
 //============================================= Reset function ================================================== //
 function reset() {
     alert("This action will remove all the entered detalis and searched results");
+    AOS.init();
     location.reload();
 }
 
